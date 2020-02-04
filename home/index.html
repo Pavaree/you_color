@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Color of you</title>
+	<link rel="stylesheet" type="text/css" href="https://jabont.com/jayss/jayss.css">
+	<style>
+		body {
+			background-color: black;
+			transition: background-color 2s;
+		}
+
+		.mobile {
+			width: 100%;
+			min-width: 320px;
+			max-width: 450px;
+			margin: auto;
+			position: relative;
+		}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-title" content="Kinahraidee">
+	<meta name="theme-color" content="#03A9F4">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="apple-touch-icon" href="your.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="your.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="your.png">
+	<link rel="apple-touch-icon" href="your.png">
+</head>
+
+<body>
+	<sp class=""></sp>
+	<select id="the_d" onchange="findColor()">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		<option>6</option>
+		<option>7</option>
+		<option>8</option>
+		<option>9</option>
+		<option>10</option>
+		<option>11</option>
+		<option>12</option>
+		<option>13</option>
+		<option>14</option>
+		<option>15</option>
+		<option>16</option>
+		<option>17</option>
+		<option>18</option>
+		<option>19</option>
+		<option>20</option>
+		<option>21</option>
+		<option>22</option>
+		<option>23</option>
+		<option>24</option>
+		<option>25</option>
+		<option>26</option>
+		<option>27</option>
+		<option>28</option>
+		<option>29</option>
+		<option>30</option>
+		<option>31</option>
+	</select>
+	<select id="the_m" onchange="findColor()">
+		<option value="d1">January</option>
+		<option value="d2">February</option>
+		<option value="d3">March</option>
+		<option value="d4">April</option>
+		<option value="d5">May</option>
+		<option value="d6">June</option>
+		<option value="d7">July</option>
+		<option value="d8">August</option>
+		<option value="d9">September</option>
+		<option value="d10">October</option>
+		<option value="d11">November</option>
+		<option value="d12">December</option>
+	</select>
+
+	<sp class="xl"></sp>
+	<div id="box1">Your Color</div>
+	<script type="text/javascript">
+		a = {
+			"d1": ["", "#FFFFE5", "#E6EAE6", "#AFAFB0", "#8D9192", "#736D71",
+				"#705B67", "#0D0015", "#b8c43a", "#69821d", "#7b8d42", "#bdd99f",
+				"#d6e9ca", "#37a34a", "#7b8d44", "#00552e", "#f0f6da", "#006e54",
+				"#47744b", "#9fc24d", "#288c66", "#a0b8ef", "#00a3af", "#38a1db",
+				"#00688b", "#0f2350", "#e3d7a3", "#fef400", "#ffd900", "#c3d825",
+				"#529c47", "#e0ebaf"],
+
+			"d2": ["", "#3f4e93", "#bc64a4", "#21297e", "#cca6bf", "#50347e", "#debdd8",
+				"#b269a1", "#6c2735", "#ea4a6e", "#ea618e", "#d3336f", "#d5345e",
+				"#585b54", "#726d40", "#89c3eb", "#a4c1d7", "#4c5e74", "#6c3524",
+				"#223a70", "#fff1cf", "#fff799", "#fabf14", "#ffec47", "#d8e2ae",
+				"#e5e8e1", "#becebc", "#a1a46d", "#5f6527", "#578a3d"],
+
+			"d3": ["", "#f5b199", "#fdede4", "#f4b3c2", "#ea5550", "#cf0125",
+				"#fef4f4", "#f3a68c", "#f2a0a1", "#f5b1aa", "#e8383d",
+				"#f4dda5", "#e65454", "#ed6d3d", "#e23620", "#d11c1e",
+				"#d2a4c8", "#915da3", "#985b9e", "#591074", "#895b8a",
+				"#aaa7d0", "#ba64a0", "#745399", "#934491", "#b33e5c",
+				"#cae2c6", "#bee0ce", "#a7d3cf", "#a3d3dd", "#49bdf0", "#ece093"],
+
+			"d4": ["", "#fdeff2", "#fbdac8", "#f5a0bd", "#e383a4", "#84a2d4",
+				"#68a9cf", "#f1f5dc", "#69b076", "#fbca4d", "#e5a323",
+				"#ecdecf", "#a29779", "#e8ece9", "#949495", "#d5dad4",
+				"#cbd0d3", "#898989", "#626063", "#524e4d", "#c7dc68",
+				"#d8e698", "#2aa74b", "#88cb9d", "#a3d49c", "#79c288",
+				"#79c266", "#00a968", "#00947a", "#00a6af", "#00b2bc"],
+
+			"d5": ["", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", ""],
+
+			"d6": ["", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", ""],
+
+			"d7": ["", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", ""],
+
+			"d8": ["", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", ""],
+
+			"d9": ["", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", ""],
+
+			"d10": ["", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", ""],
+
+			"d11": ["", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", ""],
+
+			"d12": ["", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", "",
+				"", "", "", "", ""],
+		};
+
+		function findColor() {
+			if (a[the_m.value][the_d.value] != undefined) {
+				theColor = a[the_m.value][the_d.value];
+				document.body.style.backgroundColor = a[the_m.value][the_d.value];
+				box1.style.backgroundColor = a[the_m.value][the_d.value];
+				box1.innerText = "สีของคุณคือ " + a[the_m.value][the_d.value];
+			}
+			else {
+				box1.innerText = "ไม่พบสีของวันนี้";
+			}
+
+		}
+
+	</script>
+</body>
+
+</html>
