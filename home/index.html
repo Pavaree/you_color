@@ -10,9 +10,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
 	<style>
-		*{
+		* {
 			font-family: 'Kanit', sans-serif;
 		}
+
 		body {
 			background-color: #FFFFE5;
 			transition: background-color 2s;
@@ -25,11 +26,25 @@
 			margin: 0 auto;
 			text-align-last: center;
 		}
-		.card-header{
-			background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+
+		.card-header {
+			background-color: black;
 		}
-		.card-header:hover{
-			background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+
+		.container {
+			height: 40vh;
+			width: 60vw;
+			margin: auto;
+			border-radius: 100%;
+			display: block;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			position: absolute;
+		}
+		h3{
+			font-size:2vw;
 		}
 	</style>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -48,9 +63,9 @@
 	<div class="container">
 		<div class="card center">
 			<div class="card-header">
-				<h2 class="center-align" style="color: black; text-align: center;">
+				<h3 class="center-align" style="color: white; text-align: center;">
 					Choose your Brithday and Let know color of you!
-				</h2>
+				</h3>
 			</div>
 			<div class="card-body">
 				<select id="the_d" class="custom-select" onchange="findColor()">
