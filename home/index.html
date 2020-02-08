@@ -8,9 +8,13 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
 	<style>
+		*{
+			font-family: 'Kanit', sans-serif;
+		}
 		body {
-			background-color: black;
+			background-color: #FFFFE5;
 			transition: background-color 2s;
 			font-family: 'Nunito', sans-serif;
 		}
@@ -20,6 +24,12 @@
 			display: block;
 			margin: 0 auto;
 			text-align-last: center;
+		}
+		.card-header{
+			background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+		}
+		.card-header:hover{
+			background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
 		}
 	</style>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -36,15 +46,14 @@
 <body>
 
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h2 class="center-align" style="color: aliceblue; text-align: center; background-color: black;">
+		<div class="card center">
+			<div class="card-header">
+				<h2 class="center-align" style="color: black; text-align: center;">
 					Choose your Brithday and Let know color of you!
 				</h2>
 			</div>
-		</div>
-		
-				<select id="the_d" onchange="findColor()">
+			<div class="card-body">
+				<select id="the_d" class="custom-select" onchange="findColor()">
 					<option>1</option>
 					<option>2</option>
 					<option>3</option>
@@ -78,7 +87,7 @@
 					<option>31</option>
 				</select>
 
-				<select id="the_m" onchange="findColor()">
+				<select id="the_m" class="custom-select" onchange="findColor()">
 					<option value="d1">January</option>
 					<option value="d2">February</option>
 					<option value="d3">March</option>
@@ -93,8 +102,9 @@
 					<option value="d12">December</option>
 				</select>
 
-				<div id="box1" style="color: aliceblue; text-align:center;">Wait a minute</div>
-
+				<div id="box1" style="color: black; text-align:center;">Color of you is #FFFFe5 !!</div>
+			</div>
+		</div>
 
 	</div>
 
@@ -164,7 +174,7 @@
 				"#17184b", "#003221", "#282b6e", "#28285a", "#bf783e",
 				"#8a3b00", "#bd6856", "#7dbb7d", "#bccddb", "#7c7684",
 				"#fffcbf", "#e3edc8", "#edee9e", "#ebe960", "#d7cf3a",
-				"#fdb86d", "#f37f44", "#f16f4f", "#d3381c", "#e95388","#89438c"],
+				"#fdb86d", "#f37f44", "#f16f4f", "#d3381c", "#e95388", "#89438c"],
 
 			"d10": ["", "#ee7948", "#8f2e14", "#ed6d35", "#ec5415",
 				"#c78a77", "#be8f68", "#946c45", "#b55233", "#7b411c",
